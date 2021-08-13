@@ -1,13 +1,398 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  position: fixed;
+}
+main{
+  min-height: 100vh;
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+.icontag{
+  display: flex;
+  flex-direction: column;
+}
+.icontag a{
+  padding: .4rem;
+  font-size: 1.5rem;
+}
+.main{
+  padding: 2rem 3rem;
+}
+.part1>.container1{
+  margin: 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container1>div h1{
+  padding-top: 2rem;
+  font-size: 4em;
+}
+.container1>div>h2{
+  padding-top: .5rem;
+  font-size: 2.5em;
+}
+.container1>div>p{
+  font-size: 1.3em;
+  letter-spacing: 1.5px;
+}
+.container1>div>div{
+  display: grid;
+  grid-template-columns: 7fr 6fr;
+  grid-gap: 1rem;
+}
+.container1 button{
+  padding: .7rem 1.5rem;
+  border-radius: .7rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container1 .black{
+  background-color: black;
+  color: #fff;
+}
+.img-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1>div>img{
+  width: 80%;
+}
+.brands{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brands>p{
+  font-size: 1.2rem;
+  opacity: .6;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 4px;
+  margin: 3rem;
+}
+.brands img{
+  width: 90%;
+  margin-bottom: 2rem;
+}
+.part2{
+  margin: 2rem 0;
+  padding: 2rem 3rem;
+  background-color: #212529;
+}
+.part2 h1{
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+}
+.globle{
+  background-color: #F6F6F9;
+}
+ul li {
+  list-style-type: none;
+}
+.globle ul{
+  margin: 5em auto;
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.globle ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.globle h2 {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 0;
+  opacity: .9;
+  letter-spacing: 1px;
+}
+.globle p {
+  font-size: 1.2rem;
+  opacity: .6;
+  width: 90%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.globle h4{
+  color: #4643ee;
+  position: absolute;
+  top: 9rem;
+}
+.containers{
+  width: 88%;
+  display: grid;
+  margin: 5rem auto;
+  grid-template-columns: 1fr 1fr;
+}
+.card1{
+  position: relative;
+}
+.card-frist{
+  position: relative;
+}
+.card-frist>img{
+  width: 80%;
+  height: 100%;
+}
+.card1 img{
+  width: 100%;
+}
+.card2{
+  margin-left: 5rem;
+}
+.card2 h1{
+  font-size: 3em;
+}
+.card2 p{
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: .8;
+  display: flex;
+  line-height: 2.5rem;
+}
+.card2>button{
+  padding: 1.3rem 6rem;
+  font-size: 1.2;
+  background-color: #212529;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+}
+.cards button{
+  padding: 1.3rem 6rem;
+  font-size: 1.2;
+  background-color: #4643ee;
+  color: white;
+  border: none;
+  outline: none;
+}
+.card2 h3{
+  font-size: .9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1em;
+  opacity: .6;
+}
+.card3 h1{
+  font-size: 3rem;
+}
+.card3 p{
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: .8;
+  display: flex;
+  line-height: 2.5rem;
+  margin-right: 4rem;
+}
+.card3 button{
+  padding: 1.3rem 5rem;
+  font-size: 1.2;
+  background-color: #4643ee;
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 1.7rem;
+  margin-right: 1.5rem;
+}
+.view span{
+  display: flex;
+  align-items: center;
+  color: #4643ee;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+}
+.price{
+  background-color: rgb(53, 156, 53) !important;
+  color: white;
+  border: none;
+  outline: none;
+  z-index: 2;
+  border-radius: .5rem;
+  padding: 1.1rem 1.7rem !important;
+}
+.price1{
+  position: absolute;
+  right: -3rem;
+  bottom: 10rem;
+}
+.cost{
+  background-color: white !important;
+  color: black !important;
+  border-radius: .5rem;
+  padding: 1.3rem 1.7rem !important;
+}
+.cost1{
+  position: absolute;
+  right: -3rem;
+  bottom: 4rem;
+}
+.cost2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8rem;
+  box-shadow: 2px 2px 8px rgb(209, 206, 206);
+  left: -3rem;
+}
+.price2{
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+}
+.cost2 img{
+  width: 4rem;
+}
+.btn1{
+  color: #4643ee !important;
+  background-color: white !important;
+  border: 2px solid #4643ee !important;
+  margin-right: 2rem !important;
+  padding: .8rem 3rem !important;
+}
+.card-title{
+  font-size: 1.1rem;
+}
+.creator{
+  font-size: 1rem;
+  display: flex;
+}
+.card-body{
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 1fr;
+}
+.card-btn{
+  border-radius: .7rem;
+}
+.contact{
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.conatct-left{
+  width: 80%;
+  margin: auto;
+}
+.conatct-left>h1{
+  font-size: 2.8em;
+  font-weight: 700;
+}
+.contact-info{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+}
+.contact-info>div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.contact-info input , textarea{
+  border: none;
+  border-bottom: 2px solid #212529;
+  outline: none;
+}
+.conatct-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 35%;
+}
+.conatct-right>p{
+  max-width: 250px;
+}
+.contact-info>button{
+  width: 10rem;
+  padding: .5rem;
+  border: none;
+  background-color: rgb(49, 160, 49);
+  color: #fff;
+  border-radius: .5rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px gray;
+}
+.contact-info>button:hover{
+  box-shadow: 2px 2px 8px #fff;
+}
+@media only screen and (max-width: 1020px){
+  .container1{
+    grid-template-columns: 1fr !important;
+  }
+  .container1>div>img{
+    margin: 2rem 3rem;
+  }
+  .containers{
+    grid-template-columns: 1fr;
+  }
+  .contact{
+    grid-template-columns: 1fr;
+  }
+  .conatct-right{
+    margin-top: 3rem;
+    margin-left: 0 !important;
+    align-items: center;
+  }
+  .conatct-right>p{
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 750px){
+  .globle ul{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px){
+  .container1>div>div{
+    grid-template-columns: 1fr;
+  }
+  .price1{
+    right: 1rem;
+    bottom: 7rem;
+  }
+  .cost1{
+    right: 1rem;
+    bottom: 1rem;
+  }
+  .card2{
+    margin: 1rem;
+  }
+  .price2{
+    top: 1rem;
+  left: 1rem;
+  }
+  .cost2{
+    top: 6rem;
+    left: 1rem;
+  }
+  .card3>img{
+    width: 100%;
+  }
+  .card3 button{
+    padding: 1.3rem 3rem;
+  }
+  .contact-info>div{
+    grid-template-columns: 1fr;
+  }
+  .contact-info>div input{
+    margin-top: 1rem;
+  }
 }
